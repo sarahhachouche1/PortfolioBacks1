@@ -1,0 +1,18 @@
+name: dockercompose17482418880809378262
+services:
+  quizapi:
+    build:
+      context: C:\Users\SarahHashoush\quiz\QuizApi
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: quizapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose17482418880809378262_default

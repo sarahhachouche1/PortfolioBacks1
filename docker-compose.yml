@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  quizapi:
+    image: ${DOCKER_REGISTRY-}quizapi
+    build:
+      context: .
+      dockerfile: Dockerfile
